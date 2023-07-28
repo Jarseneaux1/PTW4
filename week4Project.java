@@ -6,12 +6,12 @@ public class week4Project {
 //array of int subtract first element from last element
 		
 		int[] ages = new int[] {3, 9, 23, 64, 2, 8, 28, 93}; // 1 creating a new array of int
-		int firstNum = ages[ages.length % 1];
+		int firstNum = ages[ages[0]];
 		int lastNum = ages[ages.length - 1];
         int result = lastNum - firstNum;
         System.out.println(result);
         int[] ages2 = new int [] {1, 7, 3, 8, 15, 30, 40, 90, 100};
-           int firstNum2 = ages2[ages2.length % 1]; // 3 first element in array always
+           int firstNum2 = ages2[ages2[0]]; // 3 first element in array always
            int lastNum2 = ages2[ages2.length - 1]; // 4 last element in the array always
            int result2 = lastNum2 - firstNum2; //last element minus first element
            System.out.println(result2); //print the new int result with a different array
