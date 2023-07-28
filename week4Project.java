@@ -5,7 +5,7 @@ public class week4Project {
 	public static void main(String[] args) {
 //array of int subtract first element from last element
 		
-		int[] ages = new int[] {3, 9, 23, 64, 2, 8, 28, 93}; // 1
+		int[] ages = new int[] {3, 9, 23, 64, 2, 8, 28, 93}; // 1 creating a new array of int
 		int firstNum = ages[ages.length % 1];
 		int lastNum = ages[ages.length - 1];
         int result = lastNum - firstNum;
