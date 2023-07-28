@@ -8,9 +8,17 @@ public class week4Project {
 		int[] ages = new int[] {3, 9, 23, 64, 2, 8, 28, 93}; // 1 creating a new array of int
 		int firstNum = ages[ages.length % 1];
 		int lastNum = ages[ages.length - 1];
-        int result = lastNum - firstNum;
+        int result = lastNum - firstNum; ////a subtract first element from last
         System.out.println(result);
-        int[] ages2 = new int [] {1, 7, 3, 8, 15, 30, 40, 90, 100};
+		int sum1 = 0;
+
+        for (int age: ages) { //c iterating through the array and finding the average
+           sum1 += age;
+        }
+
+        int average1 = sum1 / ages.length;
+        System.out.println(average1);
+        int[] ages2 = new int [] {1, 7, 3, 8, 15, 30, 40, 90, 100}; //b testing with a new array
            int firstNum2 = ages2[ages2.length % 1]; // 3 first element in array always
            int lastNum2 = ages2[ages2.length - 1]; // 4 last element in the array always
            int result2 = lastNum2 - firstNum2; //last element minus first element
